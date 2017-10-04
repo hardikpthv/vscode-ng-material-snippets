@@ -1,0 +1,174 @@
+{
+    "mdAutoComplete": {
+        "prefix": "a-md-auto-complete",
+        "body": [
+            "<md-autocomplete #auto=\"mdAutocomplete\">",
+            "\t<md-option *ngFor=\"let ${1:item} of ${2:list} | async \" [value]=\"${1:item}\">",
+            "\t\t<span>{{${1:item}}}</span>",
+            "\t</md-option>",
+            "</md-autocomplete>"
+        ],
+        "description": "<md-autocomplete> control with ngFor"
+    },
+    "mdCheckbox": {
+        "prefix": "a-md-checkbox",
+        "body": [
+            "<md-checkbox [(ngModel)]=\"${1:model}\">Check me!</md-checkbox>,"
+        ],
+        "description": "<md-checkbox> control with ngModel"
+    },
+    "mdDatepicker": {
+        "prefix": "a-md-datepicker",
+        "body": [
+            "<md-form-field>",
+            "\t<input mdInput [mdDatepicker]=\"picker\" placeholder=\"Choose a date\">",
+            "\t<md-datepicker-toggle mdSuffix [for]=\"picker\"></md-datepicker-toggle>",
+            "\t<md-datepicker #picker></md-datepicker>",
+            "</md-form-field>"
+        ],
+        "description": "<md-checkbox> control"
+    },
+    "mdInput": {
+        "prefix": "a-md-input",
+        "body": [
+            "<md-form-field>",
+            "\t<input mdInput [(ngModel)]=\"${1:model}\" placeholder=\"Favorite food\">",
+            "</md-form-field>"
+        ],
+        "description": "mdInput control with ngModel"
+    },
+    "mdRadio": {
+        "prefix": "a-md-radio",
+        "body": [
+            "<md-radio-group>",
+            "\t<md-radio-button value=\"1\">Option 1</md-radio-button>",
+            "\t<md-radio-button value=\"2\">Option 2</md-radio-button>",
+            "</md-radio-group>"
+        ],
+        "description": "<md-radio-group> control with default <md-radio-button>"
+    },
+    "mdSelect": {
+        "prefix": "a-md-select",
+        "body": [
+            "<md-select placeholder=\"Favorite food\" [(ngModel)]=\"${1:model}\" name=\"food\">",
+            "\t<md-option *ngFor=\"let ${2:item} of ${3:list} | async \" [value]=\"${2:item}\">{${2:item}}}</md-option>",
+            "</md-select>"
+        ],
+        "description": "<md-select> control with ngModel"
+    },
+    "mdSlider": {
+        "prefix": "a-md-slider",
+        "body": [
+            "<md-slider></md-slider>"
+        ],
+        "description": "<md-slider> control default horizontal"
+    },
+    "mdSliderVertical": {
+        "prefix": "a-md-slider-vertical",
+        "body": [
+            "<md-slider  [vertical]=\"true\"></md-slider>"
+        ],
+        "description": "<md-slider> control vertical"
+    },
+    "mdSwitch": {
+        "prefix": "a-md-switch",
+        "body": [
+            "<md-slide-toggle>Slide me!</md-slide-toggle>"
+        ],
+        "description": "<md-slide-toggle>"
+    },
+    "mdMenu": {
+        "prefix": "a-md-menu",
+        "body": [
+            "<button md-button [mdMenuTriggerFor]=\"menu\">Menu</button>",
+            "<md-menu #menu=\"mdMenu\">",
+            "\t<button md-menu-item>Item 1</button>",
+            "\t<button md-menu-item>Item 2</button>",
+            "</md-menu>"
+        ],
+        "description": "<md-menu> with default items."
+    },
+    "mdMenuNested": {
+        "prefix": "a-md-menu-nested",
+        "body": [
+            "<button md-button [mdMenuTriggerFor]=\"season\">Seasons</button>",
+            "<md-menu #season=\"mdMenu\">",
+            "\t<button md-menu-item [mdMenuTriggerFor]=\"got\">Game of throne</button>",
+            "\t<button md-menu-item [mdMenuTriggerFor]=\"siliconValley\">Silicon Valley</button>",
+            "</md-menu>",
+            "\n<md-menu #got=\"mdMenu\">",
+            "\t<button md-menu-item [mdMenuTriggerFor]=\"seasonOne\">Season 1</button>",
+            "\t<button md-menu-item>Season 2</button>",
+            "\t<button md-menu-item>Season 3</button>",
+            "\t<button md-menu-item>Season 4</button>",
+            "\t<button md-menu-item>Season 5</button>",
+            "\t<button md-menu-item>Season 6</button>",
+            "\t<button md-menu-item>Season 7</button>",
+            "</md-menu>",
+            "\n<md-menu #seasonOne=\"mdMenu\">",
+            "\t<button md-menu-item>Winter Is Coming</button>",
+            "\t<button md-menu-item>The Kingsroad</button>",
+            "\t<button md-menu-item>Lord Snow</button>",
+            "\t<button md-menu-item>Cripples, Bastards, and Broken Things</button>",
+            "</md-menu>"
+        ],
+        "description": "Nested <md-menu> with default items."
+    },
+    "mdSidenav": {
+        "prefix": "a-md-sidenav",
+        "body": [
+            "<md-sidenav-container fullscreen>",
+            "<md-sidenav #sidenav class=\"mat-elevation-z4\" mode=\"side\" opened=\"true\">",
+            "\t<md-nav-list>",
+            "\t<md-list-item  *ngFor=\"let ${1:item} of ${2:list} \" >",
+            "\t<md-icon mdListIcon>{{${1:item}}}</md-icon>",
+            "\t<h3 mdLine>{{${1:item}}}</h3>",
+            "\t</md-list-item>",
+            "\t</md-nav-list>",
+            "\t</md-sidenav>",
+            "\t<div class=\"container\">",
+            "\t</div>",
+            "</md-sidenav-container>"
+        ],
+        "description": "<md-sidenav> control with ngFor to iterate through nav items"
+    },
+    "mdToolbar": {
+        "prefix": "a-md-toolbar",
+        "body": [
+            "<md-toolbar color=\"primary\" class=\"mat-elevation-z6\">",
+            "\t<span>${1:title}</span>",
+            "</md-toolbar>"
+        ],
+        "description": "Tooblar with primary color as default"
+    },
+    "mdCard": {
+        "prefix": "a-md-card",
+        "body": [
+            "<md-card>",
+            "\t<md-card-header>",
+            "\t\t<div md-card-avatar>${1:avatar}</div>",
+            "\t\t<md-card-title>${2:title}</md-card-title>",
+            "\t\t<md-card-subtitle>${2:sub-header}</md-card-subtitle>",
+            "\t</md-card-header>",
+            "\t<md-card-content>",
+            "\t\t${4:content}",
+            "\t</md-card-content>",
+            "\t<md-card-actions>",
+            "\t\t<button md-button>${5:actionOne}</button>",
+            "\t\t<button md-button>${6:actionTwo}</button>",
+            "\t\t</md-card-actions>",
+            "</md-card>"
+        ],
+        "description": "Basic card based"
+    },
+    "mdTab": {
+        "prefix": "a-md-tab",
+        "body": [
+            "<md-tab-group>",
+            "\t<md-tab label=\"Tab 1\">Content 1</md-tab>",
+            "\t<md-tab label=\"Tab 2\">Content 2</md-tab>",
+            "</md-tab-group>"
+        ],
+        "description": "Set of two tabs"
+    }
+}

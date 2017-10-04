@@ -1,0 +1,37 @@
+{
+    "name": "AngularMaterial",
+    "displayName": "Angular Material v2 snippets",
+    "description": "Angular Material with HTML snippets",
+    "version": "0.0.1",
+    "publisher": "hardikpthv",
+    "icon": "images/angular.png",
+    "galleryBanner": {
+        "color": "#3f51b5",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hardikpthv/vscode-ng-material-snippets.git"
+    },
+    "keywords": [
+        "Angular",        
+        "Angular 4",        
+        "Material",
+        "Angular Material",
+        "HTML"
+    ],
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            }
+        ]
+    }
+}
