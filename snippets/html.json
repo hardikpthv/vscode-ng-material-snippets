@@ -26,7 +26,7 @@
             "\t<md-datepicker #picker></md-datepicker>",
             "</md-form-field>"
         ],
-        "description": "<md-checkbox> control"
+        "description": "<md-datepicker> control"
     },
     "mdInput": {
         "prefix": "a-md-input",
@@ -66,7 +66,7 @@
     "mdSliderVertical": {
         "prefix": "a-md-slider-vertical",
         "body": [
-            "<md-slider  [vertical]=\"true\"></md-slider>"
+            "<md-slider [vertical]=\"true\"></md-slider>"
         ],
         "description": "<md-slider> control vertical"
     },
@@ -75,7 +75,7 @@
         "body": [
             "<md-slide-toggle>Slide me!</md-slide-toggle>"
         ],
-        "description": "<md-slide-toggle>"
+        "description": "Switch control"
     },
     "mdMenu": {
         "prefix": "a-md-menu",
@@ -112,7 +112,7 @@
             "\t<button md-menu-item>Cripples, Bastards, and Broken Things</button>",
             "</md-menu>"
         ],
-        "description": "Nested <md-menu> with default items."
+        "description": "Nested <md-menu> with default items"
     },
     "mdSidenav": {
         "prefix": "a-md-sidenav",
@@ -139,7 +139,7 @@
             "\t<span>${1:title}</span>",
             "</md-toolbar>"
         ],
-        "description": "Tooblar with primary color as default"
+        "description": "Toolbar with primary color as default"
     },
     "mdCard": {
         "prefix": "a-md-card",
@@ -159,7 +159,7 @@
             "\t\t</md-card-actions>",
             "</md-card>"
         ],
-        "description": "Basic card based"
+        "description": "<md-card> control, Basic card"
     },
     "mdTab": {
         "prefix": "a-md-tab",
@@ -169,6 +169,6 @@
             "\t<md-tab label=\"Tab 2\">Content 2</md-tab>",
             "</md-tab-group>"
         ],
-        "description": "Set of two tabs"
+        "description": "Tab control with set of two tabs"
     }
 }
