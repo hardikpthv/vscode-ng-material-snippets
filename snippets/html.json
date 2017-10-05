@@ -169,6 +169,6 @@
             "\t<md-tab label=\"Tab 2\">Content 2</md-tab>",
             "</md-tab-group>"
         ],
-        "description": "Tab control with set of two tabs"
+        "description": "<md-tab> control with set of two tabs"
     }
 }
