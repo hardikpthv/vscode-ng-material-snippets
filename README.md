@@ -21,19 +21,19 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 
 | Snippet                      | Purpose                             		                           |
 |------------------------------|-------------------------------------------------------------------|
-| a-md-auto-complete           | `<md-autocomplete>`  control with `*ngFor`                        |
-| a-md-checkbox                | `<md-checkbox>` control with `ngModel`                            |
-| a-md-datepicker              | `<md-datepicker>` control 					                               |
-| a-md-input                   | `mdInput` with `ngModel` 					                               |
-| a-md-radio                   | `<md-radio-group>` control with default `<md-radio-button>`       |
-| a-md-select                  | `<md-select>` control with `ngModel`		                           |
-| a-md-slider                  | `<md-slider>` control default horizontal                          |
-| a-md-slider-vertical         | `<md-slider>` control vertical                                    |
-| a-md-switch                  | `<md-slide-toggle>` switch control                                |
-| a-md-menu		                 | `<md-menu>` control with default items                            |
+| a-md-auto-complete           | `<mat-autocomplete>`  control with `*ngFor`                        |
+| a-md-checkbox                | `<mat-checkbox>` control with `ngModel`                            |
+| a-md-datepicker              | `<mat-datepicker>` control 					                               |
+| a-md-input                   | `matInput` with `ngModel` 					                               |
+| a-md-radio                   | `<mat-radio-group>` control with default `<mat-radio-button>`       |
+| a-md-select                  | `<mat-select>` control with `ngModel`		                           |
+| a-md-slider                  | `<mat-slider>` control default horizontal                          |
+| a-md-slider-vertical         | `<mat-slider>` control vertical                                    |
+| a-md-switch                  | `<mat-slide-toggle>` switch control                                |
+| a-md-menu		                 | `<mat-menu>` control with default items                            |
 | a-md-menu-nested             | Nested `<md-menu>` with default items                             |
-| a-md-sidenav                 | `<md-sidenav>` control with `*ngFor` to iterate through nav items |
-| a-md-toolbar                 | `<md-toolbar>` control with primary color as default              |
-| a-md-card         		       | `<md-card>` control basic card                                    |
-| a-md-tab                     | `<md-tab>` control with set of two tabs                           |
+| a-md-sidenav                 | `<mat-sidenav>` control with `*ngFor` to iterate through nav items |
+| a-md-toolbar                 | `<mat-toolbar>` control with primary color as default              |
+| a-md-card         		       | `<mat-card>` control basic card                                    |
+| a-md-tab                     | `<mat-tab>` control with set of two tabs                           |
 
