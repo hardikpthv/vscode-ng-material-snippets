@@ -1,3 +1,17 @@
+<a name="1.0.0"></a>
+# 1.0.0 (2017-10-14)
+
+* Added HTML snippets for
+  * `<mat-expansion-panel>` control
+  * `<mat-grid-list>` control
+  * `<mat-grid-tile>` control
+  * `<mat-menu>` control with an icon
+  * `<mat-paginator>` control
+  * `<mat-progress-bar>` control
+  * `<mat-progress-spinner>` control
+  * `matTooltip` directive
+  * `matTooltipPosition` directive
+
 <a name="0.4.2"></a>
 # 0.4.2 (2017-10-14)
 

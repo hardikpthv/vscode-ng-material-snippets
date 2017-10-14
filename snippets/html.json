@@ -10,6 +10,26 @@
         ],
         "description": "<mat-autocomplete> control with ngFor"
     },
+    "matCard": {
+        "prefix": "a-md-card",
+        "body": [
+            "<mat-card>",
+            "\t<mat-card-header>",
+            "\t\t<div mat-card-avatar>${1:avatar}</div>",
+            "\t\t<mat-card-title>${2:title}</mat-card-title>",
+            "\t\t<mat-card-subtitle>${2:sub-header}</mat-card-subtitle>",
+            "\t</mat-card-header>",
+            "\t<mat-card-content>",
+            "\t\t${4:content}",
+            "\t</mat-card-content>",
+            "\t<mat-card-actions>",
+            "\t\t<button mat-button>${5:actionOne}</button>",
+            "\t\t<button mat-button>${6:actionTwo}</button>",
+            "\t\t</mat-card-actions>",
+            "</mat-card>"
+        ],
+        "description": "<mat-card> control, Basic card"
+    },
     "matCheckbox": {
         "prefix": "a-md-checkbox",
         "body": [
@@ -28,6 +48,42 @@
         ],
         "description": "<mat-datepicker> control"
     },
+    "matExpansionPanel": {
+        "prefix": "a-md-ex-panel",
+        "body": [
+            "<mat-expansion-panel>",
+            "\t<mat-expansion-panel-header>",
+            "\t\t<mat-panel-title>",
+            "\t\t\t${1:title}",
+            "\t\t</mat-panel-title>",
+            "\t\t<mat-panel-description>",
+            "\t\t\t${2:description}",
+            "\t\t</mat-panel-description>",
+            "\t</mat-expansion-panel-header>",
+            "\t${3:panel-content}",
+            "</mat-expansion-panel>"
+        ],
+        "description": "<mat-expansion-panel> control for expandable details-summary view"
+    },
+    "matGrid": {
+        "prefix": "a-md-grid",
+        "body": [
+            "<mat-grid-list cols=\"${1:col}\" rowHeight=\"${2:column-width}:${3:row-height}\">",
+            "\t<mat-grid-tile>1</mat-grid-tile>",
+            "\t<mat-grid-tile>2</mat-grid-tile>",
+            "\t<mat-grid-tile>3</mat-grid-tile>",
+            "\t<mat-grid-tile>4</mat-grid-tile>",
+            "</mat-grid-list>"
+        ],
+        "description": "<mat-grid-list> control for grid-based layout"
+    },
+    "matGridTile": {
+        "prefix": "a-md-grid-tile",
+        "body": [
+            "<mat-grid-tile>${1:content}</mat-grid-tile>"
+        ],
+        "description": "<mat-grid-tile> Grid tile for <mat-grid-list> control"
+    },   
     "matInput": {
         "prefix": "a-md-input",
         "body": [
@@ -36,6 +92,90 @@
             "</mat-form-field>"
         ],
         "description": "matInput control with ngModel"
+    },
+    "matMenu": {
+        "prefix": "a-md-menu",
+        "body": [
+            "<button mat-button [matMenuTriggerFor]=\"menu\">Menu</button>",
+            "<mat-menu #menu=\"matMenu\">",
+            "\t<button mat-menu-item>Item 1</button>",
+            "\t<button mat-menu-item>Item 2</button>",
+            "</mat-menu>"
+        ],
+        "description": "<mat-menu> with default items."
+    },
+    "matMenuWithIcon": {
+        "prefix": "a-md-menu-with-icon",
+        "body": [
+            "<button mat-icon-button [matMenuTriggerFor]=\"menu\">",
+            "\t<mat-icon>more_vert</mat-icon>",
+            "</button>",
+            "<mat-menu #menu=\"matMenu\">",
+            "\t<button mat-menu-item>",
+            "\t\t<mat-icon>dialpad</mat-icon>",
+            "\t\t<span>Redial</span>",
+            "\t</button>",
+            "\t<button mat-menu-item>",
+            "\t\t<mat-icon>voicemail</mat-icon>",
+            "\t\t<span>Check voicemail</span>",
+            "\t</button>",
+            "\t<button mat-menu-item>",
+            "\t\t<mat-icon>notifications_off</mat-icon>",
+            "\t\t<span>Disable alerts</span>",
+            "\t</button>",
+            "</mat-menu>"
+        ],
+        "description": "<mat-menu> with default items with icon."
+    },
+    "matMenuNested": {
+        "prefix": "a-md-menu-nested",
+        "body": [
+            "<button mat-button [matMenuTriggerFor]=\"season\">Seasons</button>",
+            "<mat-menu #season=\"matMenu\">",
+            "\t<button mat-menu-item [matMenuTriggerFor]=\"got\">Game of throne</button>",
+            "\t<button mat-menu-item [matMenuTriggerFor]=\"siliconValley\">Silicon Valley</button>",
+            "</mat-menu>",
+            "\n<mat-menu #got=\"matMenu\">",
+            "\t<button mat-menu-item [matMenuTriggerFor]=\"seasonOne\">Season 1</button>",
+            "\t<button mat-menu-item>Season 2</button>",
+            "\t<button mat-menu-item>Season 3</button>",
+            "\t<button mat-menu-item>Season 4</button>",
+            "\t<button mat-menu-item>Season 5</button>",
+            "\t<button mat-menu-item>Season 6</button>",
+            "\t<button mat-menu-item>Season 7</button>",
+            "</mat-menu>",
+            "\n<mat-menu #seasonOne=\"matMenu\">",
+            "\t<button mat-menu-item>Winter Is Coming</button>",
+            "\t<button mat-menu-item>The Kingsroad</button>",
+            "\t<button mat-menu-item>Lord Snow</button>",
+            "\t<button mat-menu-item>Cripples, Bastards, and Broken Things</button>",
+            "</mat-menu>"
+        ],
+        "description": "Nested <mat-menu> with default items"
+    },
+    "matPaginator": {
+        "prefix": "a-md-paginator",
+        "body": [
+            "<mat-paginator [length]=\"${1:length}\"",
+            "\t\t\t[pageSize]=\"${2:size}\"",
+            "\t\t\t[pageSizeOptions]=\"[5, 10, 25, 100]\">",
+            "</mat-paginator>"
+        ],
+        "description": "<mat-paginator> control for pagination"
+    },
+    "matProgressBar": {
+        "prefix": "a-md-progress-bar",
+        "body": [
+            "<mat-progress-bar mode=\"indeterminate\"></mat-progress-bar>"
+        ],
+        "description": "<mat-progress-bar> control with indeterminate mode. It could be 'indeterminate', 'determinate', 'buffer' or 'query'."
+    },
+    "matProgressSpinner": {
+        "prefix": "a-md-progress-spinner",
+        "body": [
+            "<mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>"
+        ],
+        "description": "<mat-progress-spinner> control with indeterminate mode. It could be 'indeterminate' or 'determinate'."
     },
     "matRadio": {
         "prefix": "a-md-radio",
@@ -76,44 +216,7 @@
             "<mat-slide-toggle>Slide me!</mat-slide-toggle>"
         ],
         "description": "Switch control"
-    },
-    "matMenu": {
-        "prefix": "a-md-menu",
-        "body": [
-            "<button mat-button [matMenuTriggerFor]=\"menu\">Menu</button>",
-            "<mat-menu #menu=\"matMenu\">",
-            "\t<button mat-menu-item>Item 1</button>",
-            "\t<button mat-menu-item>Item 2</button>",
-            "</mat-menu>"
-        ],
-        "description": "<mat-menu> with default items."
-    },
-    "matMenuNested": {
-        "prefix": "a-md-menu-nested",
-        "body": [
-            "<button mat-button [matMenuTriggerFor]=\"season\">Seasons</button>",
-            "<mat-menu #season=\"matMenu\">",
-            "\t<button mat-menu-item [matMenuTriggerFor]=\"got\">Game of throne</button>",
-            "\t<button mat-menu-item [matMenuTriggerFor]=\"siliconValley\">Silicon Valley</button>",
-            "</mat-menu>",
-            "\n<mat-menu #got=\"matMenu\">",
-            "\t<button mat-menu-item [matMenuTriggerFor]=\"seasonOne\">Season 1</button>",
-            "\t<button mat-menu-item>Season 2</button>",
-            "\t<button mat-menu-item>Season 3</button>",
-            "\t<button mat-menu-item>Season 4</button>",
-            "\t<button mat-menu-item>Season 5</button>",
-            "\t<button mat-menu-item>Season 6</button>",
-            "\t<button mat-menu-item>Season 7</button>",
-            "</mat-menu>",
-            "\n<mat-menu #seasonOne=\"matMenu\">",
-            "\t<button mat-menu-item>Winter Is Coming</button>",
-            "\t<button mat-menu-item>The Kingsroad</button>",
-            "\t<button mat-menu-item>Lord Snow</button>",
-            "\t<button mat-menu-item>Cripples, Bastards, and Broken Things</button>",
-            "</mat-menu>"
-        ],
-        "description": "Nested <mat-menu> with default items"
-    },
+    },    
     "matSidenav": {
         "prefix": "a-md-sidenav",
         "body": [
@@ -140,27 +243,7 @@
             "</mat-toolbar>"
         ],
         "description": "Toolbar with primary color as default"
-    },
-    "matCard": {
-        "prefix": "a-md-card",
-        "body": [
-            "<mat-card>",
-            "\t<mat-card-header>",
-            "\t\t<div mat-card-avatar>${1:avatar}</div>",
-            "\t\t<mat-card-title>${2:title}</mat-card-title>",
-            "\t\t<mat-card-subtitle>${2:sub-header}</mat-card-subtitle>",
-            "\t</mat-card-header>",
-            "\t<mat-card-content>",
-            "\t\t${4:content}",
-            "\t</mat-card-content>",
-            "\t<mat-card-actions>",
-            "\t\t<button mat-button>${5:actionOne}</button>",
-            "\t\t<button mat-button>${6:actionTwo}</button>",
-            "\t\t</mat-card-actions>",
-            "</mat-card>"
-        ],
-        "description": "<mat-card> control, Basic card"
-    },
+    },    
     "matTab": {
         "prefix": "a-md-tab",
         "body": [
@@ -170,5 +253,19 @@
             "</mat-tab-group>"
         ],
         "description": "<mat-tab> control with set of two tabs"
+    },          
+    "matTooltip": {
+        "prefix": "a-md-tooltip",
+        "body": [
+            "<span matTooltip=\"${1:text}\">Hover me to view tooltip</span>"
+        ],
+        "description": "matTooltip directive to display tooltip"
+    },
+    "matTooltipPosition": {
+        "prefix": "a-md-tooltip-position",
+        "body": [
+            "matTooltipPosition=\"${1:position}\""
+        ],
+        "description": "matTooltipPosition directive to set position"
     }
 }
