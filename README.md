@@ -6,7 +6,7 @@ See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
 ## Installation
 
-1. Install Visual Studio Code 1.16.0 or higher
+1. Install Visual Studio Code 1.10.0 or higher
 1. Launch VS Code
 1. Hit `Cmd`-`Shift`-`P` (macOS) or `Ctrl`-`Shift`-`P` (Windows, Linux)
 1. Select `Install Extension`

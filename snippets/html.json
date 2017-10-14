@@ -1,6 +1,6 @@
 {
     "matAutoComplete": {
-        "prefix": "a-mat-auto-complete",
+        "prefix": "a-md-auto-complete",
         "body": [
             "<mat-autocomplete #auto=\"matAutocomplete\">",
             "\t<mat-option *ngFor=\"let ${1:item} of ${2:list} | async \" [value]=\"${1:item}\">",
@@ -11,14 +11,14 @@
         "description": "<mat-autocomplete> control with ngFor"
     },
     "matCheckbox": {
-        "prefix": "a-mat-checkbox",
+        "prefix": "a-md-checkbox",
         "body": [
             "<mat-checkbox [(ngModel)]=\"${1:model}\">Check me!</mat-checkbox>,"
         ],
         "description": "<mat-checkbox> control with ngModel"
     },
     "matDatepicker": {
-        "prefix": "a-mat-datepicker",
+        "prefix": "a-md-datepicker",
         "body": [
             "<mat-form-field>",
             "\t<input matInput [matDatepicker]=\"picker\" placeholder=\"Choose a date\">",
@@ -29,7 +29,7 @@
         "description": "<mat-datepicker> control"
     },
     "matInput": {
-        "prefix": "a-mat-input",
+        "prefix": "a-md-input",
         "body": [
             "<mat-form-field>",
             "\t<input matInput [(ngModel)]=\"${1:model}\" placeholder=\"Favorite food\">",
@@ -38,7 +38,7 @@
         "description": "matInput control with ngModel"
     },
     "matRadio": {
-        "prefix": "a-mat-radio",
+        "prefix": "a-md-radio",
         "body": [
             "<mat-radio-group>",
             "\t<mat-radio-button value=\"1\">Option 1</mat-radio-button>",
@@ -48,7 +48,7 @@
         "description": "<mat-radio-group> control with default <mat-radio-button>"
     },
     "matSelect": {
-        "prefix": "a-mat-select",
+        "prefix": "a-md-select",
         "body": [
             "<mat-select placeholder=\"Favorite food\" [(ngModel)]=\"${1:model}\" name=\"food\">",
             "\t<mat-option *ngFor=\"let ${2:item} of ${3:list} | async \" [value]=\"${2:item}\">{{${2:item}}}</mat-option>",
@@ -57,28 +57,28 @@
         "description": "<mat-select> control with ngModel"
     },
     "matSlider": {
-        "prefix": "a-mat-slider",
+        "prefix": "a-md-slider",
         "body": [
             "<mat-slider></mat-slider>"
         ],
         "description": "<mat-slider> control default horizontal"
     },
     "matSliderVertical": {
-        "prefix": "a-mat-slider-vertical",
+        "prefix": "a-md-slider-vertical",
         "body": [
             "<mat-slider [vertical]=\"true\"></mat-slider>"
         ],
         "description": "<mat-slider> control vertical"
     },
     "matSwitch": {
-        "prefix": "a-mat-switch",
+        "prefix": "a-md-switch",
         "body": [
             "<mat-slide-toggle>Slide me!</mat-slide-toggle>"
         ],
         "description": "Switch control"
     },
     "matMenu": {
-        "prefix": "a-mat-menu",
+        "prefix": "a-md-menu",
         "body": [
             "<button mat-button [matMenuTriggerFor]=\"menu\">Menu</button>",
             "<mat-menu #menu=\"matMenu\">",
@@ -89,7 +89,7 @@
         "description": "<mat-menu> with default items."
     },
     "matMenuNested": {
-        "prefix": "a-mat-menu-nested",
+        "prefix": "a-md-menu-nested",
         "body": [
             "<button mat-button [matMenuTriggerFor]=\"season\">Seasons</button>",
             "<mat-menu #season=\"matMenu\">",
@@ -115,7 +115,7 @@
         "description": "Nested <mat-menu> with default items"
     },
     "matSidenav": {
-        "prefix": "a-mat-sidenav",
+        "prefix": "a-md-sidenav",
         "body": [
             "<mat-sidenav-container fullscreen>",
             "<mat-sidenav #sidenav class=\"mat-elevation-z4\" mode=\"side\" opened=\"true\">",
@@ -133,7 +133,7 @@
         "description": "<mat-sidenav> control with ngFor to iterate through nav items"
     },
     "matToolbar": {
-        "prefix": "a-mat-toolbar",
+        "prefix": "a-md-toolbar",
         "body": [
             "<mat-toolbar color=\"primary\" class=\"mat-elevation-z6\">",
             "\t<span>${1:title}</span>",
@@ -142,7 +142,7 @@
         "description": "Toolbar with primary color as default"
     },
     "matCard": {
-        "prefix": "a-mat-card",
+        "prefix": "a-md-card",
         "body": [
             "<mat-card>",
             "\t<mat-card-header>",
@@ -162,7 +162,7 @@
         "description": "<mat-card> control, Basic card"
     },
     "matTab": {
-        "prefix": "a-mat-tab",
+        "prefix": "a-md-tab",
         "body": [
             "<mat-tab-group>",
             "\t<mat-tab label=\"Tab 1\">Content 1</mat-tab>",
