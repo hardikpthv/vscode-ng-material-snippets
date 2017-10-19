@@ -2,7 +2,7 @@
 
 This extension for Visual Studio Code adds snippets of HTML for Angular Material.
 
-See the [CHANGELOG](CHANGELOG.md) for the latest changes
+Have a look at [CHANGELOG](CHANGELOG.md) for the latest changes
 
 ## Installation
 
@@ -16,6 +16,8 @@ See the [CHANGELOG](CHANGELOG.md) for the latest changes
 ## Usage
 
 Start typing `a-md-*` and hit `enter`, the snippet spreads out.
+
+![Use Extension](images/usage.gif)
 
 ### HTML Snippets
 
