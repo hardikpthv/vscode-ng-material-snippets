@@ -33,7 +33,7 @@
     "matCheckbox": {
         "prefix": "a-md-checkbox",
         "body": [
-            "<mat-checkbox [(ngModel)]=\"${1:model}\">Check me!</mat-checkbox>,"
+            "<mat-checkbox [(ngModel)]=\"${1:model}\">Check me!</mat-checkbox>"
         ],
         "description": "<mat-checkbox> control with ngModel"
     },

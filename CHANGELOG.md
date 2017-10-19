@@ -1,3 +1,8 @@
+<a name="1.0.2"></a>
+# 1.0.2 (2017-10-19)
+
+* Fixed trailing comma in `<mat-checkbox>` control
+
 <a name="1.0.1"></a>
 # 1.0.1 (2017-10-19)
 
