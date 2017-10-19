@@ -3,8 +3,8 @@
         "prefix": "a-md-auto-complete",
         "body": [
             "<mat-autocomplete #auto=\"matAutocomplete\">",
-            "\t<mat-option *ngFor=\"let ${1:item} of ${2:list} | async \" [value]=\"${1:item}\">",
-            "\t\t<span>{{${1:item}}}</span>",
+            "\t<mat-option *ngFor=\"let ${2:item} of ${1:list} | async \" [value]=\"${2:item}\">",
+            "\t\t<span>{{${2:item}}}</span>",
             "\t</mat-option>",
             "</mat-autocomplete>"
         ],
@@ -17,7 +17,7 @@
             "\t<mat-card-header>",
             "\t\t<div mat-card-avatar>${1:avatar}</div>",
             "\t\t<mat-card-title>${2:title}</mat-card-title>",
-            "\t\t<mat-card-subtitle>${2:sub-header}</mat-card-subtitle>",
+            "\t\t<mat-card-subtitle>${3:sub-header}</mat-card-subtitle>",
             "\t</mat-card-header>",
             "\t<mat-card-content>",
             "\t\t${4:content}",
