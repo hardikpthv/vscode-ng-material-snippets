@@ -30,7 +30,10 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 | a-md-ex-panel                | `<mat-expansion-panel>` control for expandable summary view        |
 | a-md-grid                    | `<mat-grid-list>` control for grid-based layout 				          	|
 | a-md-grid-tile               | `<mat-grid-tile>` Grid tile for `<mat-grid-list>` control                       |
-| a-md-input                   | `matInput` with `ngModel` 					                                |
+| a-md-input                   | `matInput` directive					                                |
+| a-md-input-ngModel           | `matInput` with `ngModel` 					                |
+| a-md-input-error             | `mat-error` control for `matInput`				                    |
+| a-md-input-icon              | `matInput` wtih icon suffixed				                    |
 | a-md-menu		               | `<mat-menu>` control with default items                              |
 | a-md-menu-nested             | Nested `<md-menu>` with default items                              |
 | a-md-menu-with-icon		   | `<mat-menu>` control with default items and icon                  |

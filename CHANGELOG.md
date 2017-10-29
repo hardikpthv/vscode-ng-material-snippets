@@ -1,3 +1,14 @@
+<a name="1.1.0"></a>
+# 1.1.0 (2017-10-29)
+
+* Added HTML snippets for
+  * `<mat-error>` control for `matInput`
+  * `matInput` directive
+  * `matInput` with icon
+
+* Fixed HTML snippets for
+  * `matInput` with/without `ngModel`
+ 
 <a name="1.0.2"></a>
 # 1.0.2 (2017-10-19)
 

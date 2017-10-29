@@ -83,9 +83,37 @@
             "<mat-grid-tile>${1:content}</mat-grid-tile>"
         ],
         "description": "<mat-grid-tile> Grid tile for <mat-grid-list> control"
-    },   
+    },
     "matInput": {
         "prefix": "a-md-input",
+        "body": [
+            "<mat-form-field>",
+            "\t<input matInput placeholder=\"Favorite food\">",
+            "</mat-form-field>"
+        ],
+        "description": "matInput control"
+    },
+    "matInputError": {
+        "prefix": "a-md-input-err",
+        "body": [
+            "<mat-error>",
+            "\t${1:errMsg}",
+            "</mat-error>"
+        ],
+        "description": "mat-error control for matInput"
+    },
+    "matInputwithIcon": {
+        "prefix": "a-md-input-icon",
+        "body": [
+            "<mat-form-field>",
+            "\t<input matInput placeholder=\"Favorite food\">",
+            "\t<mat-icon matSuffix>face</mat-icon>",
+            "</mat-form-field>"
+        ],
+        "description": "matInput control wtih icon suffixed"
+    },
+    "matInputNgModel": {
+        "prefix": "a-md-input-ngModel",
         "body": [
             "<mat-form-field>",
             "\t<input matInput [(ngModel)]=\"${1:model}\" placeholder=\"Favorite food\">",
@@ -216,7 +244,7 @@
             "<mat-slide-toggle>Slide me!</mat-slide-toggle>"
         ],
         "description": "Switch control"
-    },    
+    },
     "matSidenav": {
         "prefix": "a-md-sidenav",
         "body": [
@@ -243,7 +271,7 @@
             "</mat-toolbar>"
         ],
         "description": "Toolbar with primary color as default"
-    },    
+    },
     "matTab": {
         "prefix": "a-md-tab",
         "body": [
@@ -253,7 +281,7 @@
             "</mat-tab-group>"
         ],
         "description": "<mat-tab> control with set of two tabs"
-    },          
+    },
     "matTooltip": {
         "prefix": "a-md-tooltip",
         "body": [
