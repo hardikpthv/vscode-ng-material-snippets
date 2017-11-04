@@ -1,3 +1,15 @@
+<a name="1.2.0"></a>
+# 1.2.0 (2017-11-04)
+
+* Added HTML snippets for
+  * `<mat-option>` control for `<mat-select>`
+  * `<mat-radio-button>` control  
+
+* Fixed HTML snippets for
+  * `<mat-select>` with/without `ngModel`
+  * `<mat-select>` placeholder
+  * `matInput` placeholder
+ 
 <a name="1.1.0"></a>
 # 1.1.0 (2017-10-29)
 

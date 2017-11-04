@@ -88,7 +88,7 @@
         "prefix": "a-md-input",
         "body": [
             "<mat-form-field>",
-            "\t<input matInput placeholder=\"Favorite food\">",
+            "\t<input matInput placeholder=\"${1:hint}\">",
             "</mat-form-field>"
         ],
         "description": "matInput control"
@@ -209,17 +209,40 @@
         "prefix": "a-md-radio",
         "body": [
             "<mat-radio-group>",
-            "\t<mat-radio-button value=\"1\">Option 1</mat-radio-button>",
-            "\t<mat-radio-button value=\"2\">Option 2</mat-radio-button>",
+            "\t<mat-radio-button value=\"${1:val}\">${1:val}</mat-radio-button>",
+            "\t<mat-radio-button value=\"${2:val}\">${2:val}</mat-radio-button>",
             "</mat-radio-group>"
         ],
         "description": "<mat-radio-group> control with default <mat-radio-button>"
     },
+    "matRadioBtn": {
+        "prefix": "a-md-radio-btn",
+        "body": [
+            "\t<mat-radio-button value=\"${1:val}\">${1:val}</mat-radio-button>"
+        ],
+        "description": "<mat-radio-button> button"
+    },
     "matSelect": {
         "prefix": "a-md-select",
         "body": [
-            "<mat-select placeholder=\"Favorite food\" [(ngModel)]=\"${1:model}\" name=\"food\">",
-            "\t<mat-option *ngFor=\"let ${2:item} of ${3:list} | async \" [value]=\"${2:item}\">{{${2:item}}}</mat-option>",
+            "<mat-select placeholder=\"${1:hint}\">",
+            "\t<mat-option [value]=\"${2:val}\">{{${2:val}}}</mat-option>",
+            "</mat-select>"
+        ],
+        "description": "<mat-select> control"
+    },
+    "matSelectOption": {
+        "prefix": "a-md-sel-opt",
+        "body": [
+            "\t<mat-option [value]=\"${1:val}\">{{${1:val}}}</mat-option>"
+        ],
+        "description": "<mat-option> for <mat-select>"
+    },
+    "matSelectWithNgModel": {
+        "prefix": "a-md-select-ngModel",
+        "body": [
+            "<mat-select placeholder=\"${4:hint}\" [(ngModel)]=\"${1:model}\" name=\"food\">",
+            "\t<mat-option *ngFor=\"let ${2:item} of ${3:list} \" [value]=\"${2:item}\">{{${2:item}}}</mat-option>",
             "</mat-select>"
         ],
         "description": "<mat-select> control with ngModel"
