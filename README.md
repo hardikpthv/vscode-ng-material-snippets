@@ -1,4 +1,4 @@
-# Angular Material 2 Snippets for VS Code
+# Angular Material v6 Snippets for VS Code
 
 This extension for Visual Studio Code adds snippets of HTML for Angular Material.
 

@@ -1,37 +1,30 @@
 {
-    "name": "AngularMaterial",
-    "displayName": "Angular Material v6 snippets",
-    "description": "Angular Material with HTML snippets",
-    "version": "6.0.0",
-    "publisher": "hardikpthv",
-    "icon": "images/angular.png",
-    "galleryBanner": {
-        "color": "#3f51b5",
-        "theme": "dark"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/hardikpthv/vscode-ng-material-snippets.git"
-    },
-    "keywords": [
-        "Angular",
-        "Angular 6",
-        "Material",
-        "Angular Material",
-        "HTML"
-    ],
-    "engines": {
-        "vscode": "^1.10.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "html",
-                "path": "./snippets/html.json"
-            }
-        ]
-    }
+  "name": "AngularMaterial",
+  "displayName": "Angular Material v6 snippets",
+  "description": "Angular Material with HTML snippets",
+  "version": "6.0.0",
+  "publisher": "hardikpthv",
+  "license": "MIT",
+  "icon": "images/angular.png",
+  "galleryBanner": {
+    "color": "#3f51b5",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hardikpthv/vscode-ng-material-snippets.git"
+  },
+  "keywords": ["Angular", "Angular 6", "Material", "Angular Material", "HTML"],
+  "engines": {
+    "vscode": "^1.10.0"
+  },
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
+      }
+    ]
+  }
 }

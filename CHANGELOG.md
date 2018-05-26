@@ -2,6 +2,8 @@
 
 # 6.0.0 (2018-05-26)
 
+* Added documentation to `README.md` for new snippets
+* Updated the `README.md` for v6
 * Added HTML snippets for
 
   * `mat-badge` directive
