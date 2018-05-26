@@ -232,7 +232,7 @@
         "description": "<mat-select> control"
     },
     "matSelectOption": {
-        "prefix": "a-md-sel-opt",
+        "prefix": "a-md-select-option",
         "body": [
             "\t<mat-option [value]=\"${1:val}\">{{${1:val}}}</mat-option>"
         ],

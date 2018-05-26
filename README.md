@@ -44,7 +44,7 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 | a-md-radio-btn               | `<mat-radio-button>` button |
 | a-md-select                  | `<mat-select>` control |
 | a-md-select-ngModel          | `<mat-select>` control with `ngModel` |
-| a-md-sel-opt                 | `<mat-option>`  for `<mat-select>` |
+| a-md-select-option           | `<mat-option>`  for `<mat-select>` |
 | a-md-slider                  | `<mat-slider>` control default horizontal |
 | a-md-slider-vertical         | `<mat-slider>` control vertical |
 | a-md-sidenav                 | `<mat-sidenav>` control with `*ngFor` to iterate through nav items |
