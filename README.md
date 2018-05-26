@@ -24,10 +24,21 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 | Snippet               | Purpose                                                            |
 | --------------------- | ------------------------------------------------------------------ |
 | a-md-auto-complete    | `<mat-autocomplete>` control with `*ngFor`                         |
+| a-md-badge            | `matBadge` with all configutration                                 |
+| a-md-badge-button     | `matBadge` on button `mat-button`                                  |
+| a-md-button           | `mat-button` basic button                                          |
+| a-md-button-link      | `mat-button` basic button with `routerLink`                        |
+| a-md-raised-button    | `mat-raised-button` button                                         |
+| a-md-button-toggles   | `<mat-button-toggle-group>` control                                |
+| a-md-icon-button      | `mat-icon-button` button                                           |
 | a-md-card             | `<mat-card>` control basic card                                    |
 | a-md-checkbox         | `<mat-checkbox>` control with `ngModel`                            |
 | a-md-datepicker       | `<mat-datepicker>` control                                         |
+| a-md-divider          | `<mat-divider>` control                                            |
+| a-md-inset-divider    | `<mat-divider>` control configured `inset`                         |
 | a-md-ex-panel         | `<mat-expansion-panel>` control for expandable summary view        |
+| a-md-fab              | `mat-fab` Floating action button                                   |
+| a-md-fab-mini         | `mat-mini-fab` Floating action mini button                         |
 | a-md-grid             | `<mat-grid-list>` control for grid-based layout                    |
 | a-md-grid-tile        | `<mat-grid-tile>` Grid tile for `<mat-grid-list>` control          |
 | a-md-input            | `matInput` directive                                               |

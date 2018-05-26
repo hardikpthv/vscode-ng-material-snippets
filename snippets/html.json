@@ -10,6 +10,56 @@
     ],
     "description": "<mat-autocomplete> control with ngFor"
   },
+  "matBadge": {
+    "prefix": "a-md-badge",
+    "body": [
+      "matBadge=\"${1:value}\" matBadgePosition=\"${2:postion}\" matBadeColor=\"${3:color}\"",
+      "matBadgeSize=\"${4:size}\" matBadgeOverlap=\"${5:overlap}\" matBadgeHidden=\"${6:hidden}\""
+    ],
+    "description": "matBadge with all configutration"
+  },
+  "matBadgeButton": {
+    "prefix": "a-md-badge-button",
+    "body": [
+      "<button mat-raised-button color=\"primary\"",
+      "\t\tmatBadge=\"${1:value}\" matBadgePosition=\"${2:postion}\" matBadeColor=\"${3:color}\">",
+      "Badge </button>"
+    ],
+    "description": "matBadge on button control"
+  },
+  "matButton": {
+    "prefix": "a-md-button",
+    "body": ["<button mat-button>${1:value}</button>"],
+    "description": "mat-button control"
+  },
+  "matButtonLink": {
+    "prefix": "a-md-button-link",
+    "body": ["<button mat-button routerLink=\"${2:link}\">${1:value}</button>"],
+    "description": "mat-button control with routerLink"
+  },
+  "matButtonRaised": {
+    "prefix": "a-md-raised-button",
+    "body": ["<button mat-raised-button>${1:value}</button>"],
+    "description": "mat-raised-button control"
+  },
+  "matButtonToggles": {
+    "prefix": "a-md-button-toggles",
+    "body": [
+      "<mat-button-toggle-group aria-label=\"${1:label}\">",
+      "\t<mat-button-toggle value=\"${2:value}\">${2:value}</mat-button-toggle>",
+      "</mat-button-toggle-group>"
+    ],
+    "description": "mat-button-toggle-group control"
+  },
+  "matButtonWithIcon": {
+    "prefix": "a-md-icon-button",
+    "body": [
+      "<button mat-icon-button>",
+      "\t<mat-icon aria-label=\"${2:label}\">${1:icon}</mat-icon>",
+      "</button>"
+    ],
+    "description": "mat-icon-button control"
+  },
   "matCard": {
     "prefix": "a-md-card",
     "body": [
@@ -48,6 +98,16 @@
     ],
     "description": "<mat-datepicker> control"
   },
+  "matDivider": {
+    "prefix": "a-md-divider",
+    "body": ["<mat-divider></mat-divider"],
+    "description": "mat-divider control"
+  },
+  "matDividerInset": {
+    "prefix": "a-md-inset-divider",
+    "body": ["<mat-divider [inset]=\"true\"></mat-divider"],
+    "description": "mat-divider control configured inset"
+  },
   "matExpansionPanel": {
     "prefix": "a-md-ex-panel",
     "body": [
@@ -65,6 +125,24 @@
     ],
     "description":
       "<mat-expansion-panel> control for expandable details-summary view"
+  },
+  "matFab": {
+    "prefix": "a-md-fab",
+    "body": [
+      "<button mat-fab>",
+      "\t<mat-icon aria-label=\"${2:label}\">${1:icon}</mat-icon>",
+      "</button>"
+    ],
+    "description": "mat-fab control"
+  },
+  "matFabMini": {
+    "prefix": "a-md-fab-mini",
+    "body": [
+      "<button mat-mini-fab>",
+      "\t<mat-icon aria-label=\"${2:label}\">${1:icon}</mat-icon>",
+      "</button>"
+    ],
+    "description": "mat-mini-fab control"
   },
   "matGrid": {
     "prefix": "a-md-grid",

@@ -1,3 +1,21 @@
+<a name="6.0.0"></a>
+
+# 6.0.0 (2017-05-26)
+
+* Added HTML snippets for
+
+  * `mat-badge` directive
+  * `mat-button` directive
+  * `mat-raised-button` directive
+  * `mat-icon-button` directive
+  * `mat-fab` directive
+  * `mat-mini-fab` directive
+  * `<mat-button-toggle-group>` control
+  * `<mat-divider>` control |
+
+* Fixed HTML snippets for
+  * `a-md-sel-opt` to `a-md-select-option`
+
 <a name="1.2.0"></a>
 
 # 1.2.0 (2017-11-04)
