@@ -1,3 +1,35 @@
+<a name="6.1.0"></a>
+
+# 6.1.0 (2018-09-22)
+
+* Added documentation to `README.md` for new snippets
+* Added issues and homepage url to `package.json`
+* Added HTML snippets for
+
+  * `<mat-card>` control, no header, body and actions
+  * `<mat-checkbox>` control with `formControlName`
+  * `matInput` with `formControlName` enclosed `<mat-form-field>`   
+  * `<mat-select>` control with `formControlName` 
+  * `<mat-list>` control with default `<mat-list-item>` 
+  * `<mat-list-item>` single item    
+  * `<mat-selection-list>` control with default `<mat-list-option>` 
+  * `<mat-list-option>` single item                         
+  * `<mat-list>` with default `<mat-icon matListIcon>` 
+
+* Fixed HTML snippets for
+
+  * added `role` in `a-md-auto-complete` for accessibility support
+  * added projection for title to `a-md-badge-button`
+  * added placeholder projection in `a-md-input-icon`
+  * added placeholder in `a-md-input-ngModel`
+  * added projection for config. in `a-md-menu`
+  * updated placeholder projection in `a-md-input`
+  * updated placeholder projection in `a-md-select`
+  * updated formatting for `a-md-sidenav`
+  * removed unnecessary items from `a-md-menu-with-icon`
+  
+
+
 <a name="6.0.0"></a>
 
 # 6.0.0 (2018-05-26)
@@ -13,7 +45,7 @@
   * `mat-fab` directive
   * `mat-mini-fab` directive
   * `<mat-button-toggle-group>` control
-  * `<mat-divider>` control |
+  * `<mat-divider>` control
 
 * Fixed HTML snippets for
   * `a-md-sel-opt` to `a-md-select-option`

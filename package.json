@@ -2,7 +2,7 @@
   "name": "AngularMaterial",
   "displayName": "Angular Material v6 snippets",
   "description": "Angular Material with HTML snippets",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "publisher": "hardikpthv",
   "license": "MIT",
   "icon": "images/angular.png",
@@ -10,15 +10,27 @@
     "color": "#3f51b5",
     "theme": "dark"
   },
+  "homepage": "https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/hardikpthv/vscode-ng-material-snippets/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hardikpthv/vscode-ng-material-snippets.git"
   },
-  "keywords": ["Angular", "Angular 6", "Material", "Angular Material", "HTML"],
+  "keywords": [
+    "Angular",
+    "Angular 6",
+    "Material",
+    "Angular Material",
+    "HTML"
+  ],
   "engines": {
     "vscode": "^1.10.0"
   },
-  "categories": ["Snippets"],
+  "categories": [
+    "Snippets"
+  ],
   "contributes": {
     "snippets": [
       {
