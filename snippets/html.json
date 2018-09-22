@@ -2,7 +2,7 @@
   "matAutoComplete": {
     "prefix": "a-md-auto-complete",
     "body": [
-      "<mat-autocomplete #auto=\"matAutocomplete\">",
+      "<mat-autocomplete role=\"combobox\" #auto=\"matAutocomplete\">",
       "\t<mat-option *ngFor=\"let ${2:item} of ${1:list} | async \" [value]=\"${2:item}\">",
       "\t\t<span>{{${2:item}}}</span>",
       "\t</mat-option>",
@@ -22,8 +22,9 @@
     "prefix": "a-md-badge-button",
     "body": [
       "<button mat-raised-button color=\"primary\"",
-      "\t\tmatBadge=\"${1:value}\" matBadgePosition=\"${2:postion}\" matBadeColor=\"${3:color}\">",
-      "Badge </button>"
+      "\t\tmatBadge=\"${1:value}\" matBadgePosition=\"${2:postion}\"",
+      "\t\tmatBadeColor=\"${3:color}\">${4:title}",
+      "</button>"
     ],
     "description": "matBadge on button control"
   },
@@ -80,12 +81,24 @@
     ],
     "description": "<mat-card> control, Basic card"
   },
-  "matCheckbox": {
+  "matCardSimple": {
+    "prefix": "a-md-card-simple",
+    "body": ["<mat-card>", "\t${1:content}", "</mat-card>"],
+    "description": "<mat-card> control, Simple card"
+  },
+  "matCheckboxNg": {
     "prefix": "a-md-checkbox",
     "body": [
       "<mat-checkbox [(ngModel)]=\"${1:model}\">Check me!</mat-checkbox>"
     ],
     "description": "<mat-checkbox> control with ngModel"
+  },
+  "matCheckboxFc": {
+    "prefix": "a-md-checkbox-fc",
+    "body": [
+      "<mat-checkbox formControlName=\"${1:model}\">Check me!</mat-checkbox>"
+    ],
+    "description": "<mat-checkbox> control with formControlName"
   },
   "matDatepicker": {
     "prefix": "a-md-datepicker",
@@ -123,8 +136,7 @@
       "\t${3:panel-content}",
       "</mat-expansion-panel>"
     ],
-    "description":
-      "<mat-expansion-panel> control for expandable details-summary view"
+    "description": "<mat-expansion-panel> control for expandable details-summary view"
   },
   "matFab": {
     "prefix": "a-md-fab",
@@ -165,7 +177,7 @@
     "prefix": "a-md-input",
     "body": [
       "<mat-form-field>",
-      "\t<input matInput placeholder=\"${1:hint}\">",
+      "\t<input matInput placeholder=\"${1:placeholder}\">",
       "</mat-form-field>"
     ],
     "description": "matInput control"
@@ -179,8 +191,8 @@
     "prefix": "a-md-input-icon",
     "body": [
       "<mat-form-field>",
-      "\t<input matInput placeholder=\"Favorite food\">",
-      "\t<mat-icon matSuffix>face</mat-icon>",
+      "\t<input matInput placeholder=\"${1:placeHolder}\">",
+      "\t<mat-icon matSuffix>${2:icon}</mat-icon>",
       "</mat-form-field>"
     ],
     "description": "matInput control wtih icon suffixed"
@@ -189,18 +201,27 @@
     "prefix": "a-md-input-ngModel",
     "body": [
       "<mat-form-field>",
-      "\t<input matInput [(ngModel)]=\"${1:model}\" placeholder=\"Favorite food\">",
+      "\t<input matInput [(ngModel)]=\"${2:model}\" placeholder=\"${1:placeHolder}\">",
       "</mat-form-field>"
     ],
     "description": "matInput control with ngModel"
   },
+  "matInputFc": {
+    "prefix": "a-md-input-fc",
+    "body": [
+      "<mat-form-field>",
+      "\t<input matInput formControlName=\"${2:control}\" placeholder=\"${1:placeHolder}\">",
+      "</mat-form-field>"
+    ],
+    "description": "matInput control with formControlName"
+  },
   "matMenu": {
     "prefix": "a-md-menu",
     "body": [
-      "<button mat-button [matMenuTriggerFor]=\"menu\">Menu</button>",
+      "<button mat-button [matMenuTriggerFor]=\"menu\">Open</button>",
       "<mat-menu #menu=\"matMenu\">",
-      "\t<button mat-menu-item>Item 1</button>",
-      "\t<button mat-menu-item>Item 2</button>",
+      "\t<button mat-menu-item>${1:item1}</button>",
+      "\t<button mat-menu-item>${2:item2}</button>",
       "</mat-menu>"
     ],
     "description": "<mat-menu> with default items."
@@ -215,14 +236,6 @@
       "\t<button mat-menu-item>",
       "\t\t<mat-icon>dialpad</mat-icon>",
       "\t\t<span>Redial</span>",
-      "\t</button>",
-      "\t<button mat-menu-item>",
-      "\t\t<mat-icon>voicemail</mat-icon>",
-      "\t\t<span>Check voicemail</span>",
-      "\t</button>",
-      "\t<button mat-menu-item>",
-      "\t\t<mat-icon>notifications_off</mat-icon>",
-      "\t\t<span>Disable alerts</span>",
       "\t</button>",
       "</mat-menu>"
     ],
@@ -267,16 +280,14 @@
   "matProgressBar": {
     "prefix": "a-md-progress-bar",
     "body": ["<mat-progress-bar mode=\"indeterminate\"></mat-progress-bar>"],
-    "description":
-      "<mat-progress-bar> control with indeterminate mode. It could be 'indeterminate', 'determinate', 'buffer' or 'query'."
+    "description": "<mat-progress-bar> control with indeterminate mode. It could be 'indeterminate', 'determinate', 'buffer' or 'query'."
   },
   "matProgressSpinner": {
     "prefix": "a-md-progress-spinner",
     "body": [
       "<mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>"
     ],
-    "description":
-      "<mat-progress-spinner> control with indeterminate mode. It could be 'indeterminate' or 'determinate'."
+    "description": "<mat-progress-spinner> control with indeterminate mode. It could be 'indeterminate' or 'determinate'."
   },
   "matRadio": {
     "prefix": "a-md-radio",
@@ -298,8 +309,8 @@
   "matSelect": {
     "prefix": "a-md-select",
     "body": [
-      "<mat-select placeholder=\"${1:hint}\">",
-      "\t<mat-option [value]=\"${2:val}\">{{${2:val}}}</mat-option>",
+      "<mat-select placeholder=\"${1:placeholder}\">",
+      "\t<mat-option [value]=\"'${2:val}'\">{{${2:val}}}</mat-option>",
       "</mat-select>"
     ],
     "description": "<mat-select> control"
@@ -312,11 +323,20 @@
   "matSelectWithNgModel": {
     "prefix": "a-md-select-ngModel",
     "body": [
-      "<mat-select placeholder=\"${4:hint}\" [(ngModel)]=\"${1:model}\" name=\"food\">",
-      "\t<mat-option *ngFor=\"let ${2:item} of ${3:list} \" [value]=\"${2:item}\">{{${2:item}}}</mat-option>",
+      "<mat-select placeholder=\"${1:placeholder}\" [(ngModel)]=\"${2:model}\" name=\"${1}\">",
+      "\t<mat-option *ngFor=\"let ${4:item} of ${3:list} \" [value]=\"${4}\">{{${4}}}</mat-option>",
       "</mat-select>"
     ],
     "description": "<mat-select> control with ngModel"
+  },
+  "matSelectWithFc": {
+    "prefix": "a-md-select-fc",
+    "body": [
+      "<mat-select placeholder=\"${1:placeholder}\" formControlName=\"${2:contorl}\">",
+      "\t<mat-option *ngFor=\"let ${4:item} of ${3:list} \" [value]=\"${4:item}\">{{${4:item}}}</mat-option>",
+      "</mat-select>"
+    ],
+    "description": "<mat-select> control with formControlName"
   },
   "matSlider": {
     "prefix": "a-md-slider",
@@ -331,26 +351,25 @@
   "matSwitch": {
     "prefix": "a-md-switch",
     "body": ["<mat-slide-toggle>Slide me!</mat-slide-toggle>"],
-    "description": "Switch control"
+    "description": "Switch<mat-slide-toggle> control"
   },
   "matSidenav": {
     "prefix": "a-md-sidenav",
     "body": [
       "<mat-sidenav-container fullscreen>",
-      "<mat-sidenav #sidenav class=\"mat-elevation-z4\" mode=\"side\" opened=\"true\">",
-      "\t<mat-nav-list>",
-      "\t<mat-list-item  *ngFor=\"let ${1:item} of ${2:list} \" >",
-      "\t<mat-icon matListIcon>{{${1:item}}}</mat-icon>",
-      "\t<h3 matLine>{{${1:item}}}</h3>",
-      "\t</mat-list-item>",
-      "\t</mat-nav-list>",
+      "\t<mat-sidenav #sidenav class=\"mat-elevation-z4\" mode=\"side\" opened=\"true\">",
+      "\t\t<mat-nav-list>",
+      "\t\t\t<mat-list-item *ngFor=\"let ${2:item} of ${1:list} \" >",
+      "\t\t\t\t<mat-icon matListIcon>{{${2:item}}}</mat-icon>",
+      "\t\t\t\t<h3 matLine>{{${2:item}}}</h3>",
+      "\t\t\t</mat-list-item>",
+      "\t\t</mat-nav-list>",
       "\t</mat-sidenav>",
       "\t<div class=\"container\">",
       "\t</div>",
       "</mat-sidenav-container>"
     ],
-    "description":
-      "<mat-sidenav> control with ngFor to iterate through nav items"
+    "description": "<mat-sidenav> control with ngFor to iterate through nav items"
   },
   "matToolbar": {
     "prefix": "a-md-toolbar",
@@ -380,5 +399,48 @@
     "prefix": "a-md-tooltip-position",
     "body": ["matTooltipPosition=\"${1:position}\""],
     "description": "matTooltipPosition directive to set position"
+  },
+  "matList": {
+    "prefix": "a-md-list",
+    "body": [
+      "<mat-list role=\"list\">",
+      "\t<mat-list-item role=\"listitem\">${1:item1}</mat-list-item>",
+      "\t<mat-list-item role=\"listitem\">${2:item2}</mat-list-item>",
+      "</mat-list>"
+    ],
+    "description": "<mat-list> control with default <mat-list-item>"
+  },
+  "matListItem": {
+    "prefix": "a-md-list-item",
+    "body": ["<mat-list-item role=\"listitem\">${1:item1}</mat-list-item>"],
+    "description": "<mat-list-item> control"
+  },
+  "matSelectionList": {
+    "prefix": "a-md-selection-list",
+    "body": [
+      "<mat-selection-list  role=\"listbox\">",
+      "\t<mat-list-option role=\"option\">${1:option1}</mat-list-option>",
+      "\t<mat-list-option role=\"option\">${2:option2}</mat-list-option>",
+      "</mat-selection-list>"
+    ],
+    "description": "<mat-selection-list> control"
+  },
+  "matListOption": {
+    "prefix": "a-md-list-option",
+    "body": ["<mat-list-option  role=\"option\">${1:item1}</mat-list-option>"],
+    "description": "<mat-list-option> control"
+  },
+  "matListWithIcon": {
+    "prefix": "a-md-icon-list",
+    "body": [
+      "<mat-list role=\"list\">",
+      "\t<mat-list-item role=\"listitem\">${1:item1}",
+      "\t\t<mat-icon matListIcon>${2:icon}</mat-icon>",
+      "\t\t<h3 matLine> ${2:heading} </h3>",
+      "\t\t<p matLine>${3:content}</p>",
+      "\t</mat-list-item>",
+      "</mat-list>"
+    ],
+    "description": "<mat-list> control with icon"
   }
 }
