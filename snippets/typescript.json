@@ -1,0 +1,15 @@
+{
+  "matAutoComplete": {
+    "prefix": "a-md-snackbar",
+    "body": [
+      "//import {MatSnackBar} from '@angular/material';",
+      "//constructor(public snackBar: MatSnackBar) {}",
+      "openSnackBar(message: string, action: string) {",
+      "\tthis.snackBar.open(message, action, {",
+      "\t\tduration: ${1:duration},",
+      "\t});",
+      "}"
+    ],
+    "description": "MatSnackBar configuration"
+  }
+}

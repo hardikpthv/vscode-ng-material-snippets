@@ -442,5 +442,77 @@
       "</mat-list>"
     ],
     "description": "<mat-list> control with icon"
+  },
+  "matRipple": {
+    "prefix": "a-md-ripple",
+    "body": ["matRipple [matRippleColor]=\"${1:color}\""],
+    "description": "matRipple and matRippleColor directives"
+  },
+  "matRippleContainer": {
+    "prefix": "a-md-ripple-container",
+    "body": ["<div matRipple [matRippleColor]=\"${1:color}\">", "\t", "</div>"],
+    "description": "Ripple container"
+  },
+  "matHorizontalStepper": {
+    "prefix": "a-md-stepper",
+    "body": [
+      "<mat-horizontal-stepper [linear]=\"${1:isLinear}\" #stepper>",
+      "\t<mat-step [stepControl]=\"${2:formGroup}\">",
+      "\t\t<form></form>",
+      "\t\t<div>",
+      "\t\t\t<button mat-button matStepperNext>Next</button>",
+      "\t\t</div>",
+      "\t</mat-step>",
+      "</mat-horizontal-stepper>"
+    ],
+    "description": "<mat-horizontal-stepper> control"
+  },
+  "matHorizontalStep": {
+    "prefix": "a-md-step",
+    "body": [
+      "<mat-step [stepControl]=\"${1:formGroup}\">",
+      "\t<form></form>",
+      "\t<div>",
+      "\t\t<button mat-button matStepperPrevious>Back</button>",
+      "\t\t<button mat-button matStepperNext>Next</button>",
+      "\t</div>",
+      "</mat-step>"
+    ],
+    "description": "<mat-step> control"
+  },
+  "matTree": {
+    "prefix": "a-md-tree",
+    "body": [
+      "<mat-tree>",
+      "\t<mat-tree-node>${1:parent}</mat-tree-node>",
+      "\t<mat-tree-node> -- ${2:child}</mat-tree-node>",
+      "</mat-tree>"
+    ],
+    "description": "<mat-tree> control"
+  },
+  "matTreeNode": {
+    "prefix": "a-md-tree-node",
+    "body": ["<mat-tree-node>${1:value}</mat-tree-node>"],
+    "description": "<mat-tree-node> control"
+  },
+  "matTreeNestedNode": {
+    "prefix": "a-md-tree-nested-node",
+    "body": ["<mat-nested-tree-node>${1:value}</mat-nested-tree-node>"],
+    "description": "<mat-nested-tree-node> control"
+  },
+  "matChips": {
+    "prefix": "a-md-chips",
+    "body": [
+      "<mat-chip-list>",
+      "\t<mat-chip>${1:val1}</mat-chip>",
+      "\t<mat-chip>${2:val2}</mat-chip>",
+      "</mat-chip-list>"
+    ],
+    "description": "<mat-chip-list> control with <mat-chip>"
+  },
+  "matChip": {
+    "prefix": "a-md-chip",
+    "body": ["<mat-chip>${1:val}</mat-chip>"],
+    "description": "<mat-chip> control for <mat-chip-list>"
   }
 }

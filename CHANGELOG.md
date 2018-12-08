@@ -1,11 +1,28 @@
+<a name="7.0.0"></a>
+
+# 7.0.0 (2018-12-08)
+
+* Updated documentation to [`README.md`](https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md) for new snippets
+* Added HTML snippets for
+  * `matRipple` directive
+  * `matRippleColor` directive
+  * `<mat-horizontal-stepper>` control
+  * `<mat-step>` control
+  * `<mat-tree>` control  
+  * `<mat-tree-node>` control  
+  * `<mat-nested-tree-node>` control  
+  * `<mat-chip-list>` control
+  * `<mat-chip>` control
+* Added TypeScript snippets for
+  * `MatSnackBar` configuration
+  
 <a name="6.1.0"></a>
 
 # 6.1.0 (2018-09-22)
 
-* Added documentation to `README.md` for new snippets
+* Added documentation to [`README.md`](https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md) for new snippets
 * Added issues and homepage url to `package.json`
 * Added HTML snippets for
-
   * `<mat-card>` control, no header, body and actions
   * `<mat-checkbox>` control with `formControlName`
   * `matInput` with `formControlName` enclosed `<mat-form-field>`   
@@ -15,9 +32,7 @@
   * `<mat-selection-list>` control with default `<mat-list-option>` 
   * `<mat-list-option>` single item                         
   * `<mat-list>` with default `<mat-icon matListIcon>` 
-
 * Fixed HTML snippets for
-
   * added `role` in `a-md-auto-complete` for accessibility support
   * added projection for title to `a-md-badge-button`
   * added placeholder projection in `a-md-input-icon`
@@ -28,8 +43,6 @@
   * updated formatting for `a-md-sidenav`
   * removed unnecessary items from `a-md-menu-with-icon`
   
-
-
 <a name="6.0.0"></a>
 
 # 6.0.0 (2018-05-26)
@@ -37,7 +50,6 @@
 * Added documentation to `README.md` for new snippets
 * Updated the `README.md` for v6
 * Added HTML snippets for
-
   * `mat-badge` directive
   * `mat-button` directive
   * `mat-raised-button` directive
@@ -46,7 +58,6 @@
   * `mat-mini-fab` directive
   * `<mat-button-toggle-group>` control
   * `<mat-divider>` control
-
 * Fixed HTML snippets for
   * `a-md-sel-opt` to `a-md-select-option`
 
@@ -58,8 +69,8 @@
 
   * `<mat-option>` control for `<mat-select>`
   * `<mat-radio-button>` control
-
 * Fixed HTML snippets for
+
   * `<mat-select>` with/without `ngModel`
   * `<mat-select>` placeholder
   * `matInput` placeholder
@@ -73,8 +84,8 @@
   * `<mat-error>` control for `matInput`
   * `matInput` directive
   * `matInput` with icon
-
 * Fixed HTML snippets for
+
   * `matInput` with/without `ngModel`
 
 <a name="1.0.2"></a>
@@ -88,6 +99,7 @@
 # 1.0.1 (2017-10-19)
 
 * Fixed tab sequence in HTML snippets for
+
   * `<mat-autocomplete>` control
   * `<mat-card>` control
 
@@ -96,6 +108,7 @@
 # 1.0.0 (2017-10-14)
 
 * Added HTML snippets for
+
   * `<mat-expansion-panel>` control
   * `<mat-grid-list>` control
   * `<mat-grid-tile>` control

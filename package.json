@@ -1,42 +1,46 @@
 {
-  "name": "AngularMaterial",
-  "displayName": "Angular Material v6 snippets",
-  "description": "Angular Material with HTML snippets",
-  "version": "6.1.0",
-  "publisher": "hardikpthv",
-  "license": "MIT",
-  "icon": "images/angular.png",
-  "galleryBanner": {
-    "color": "#3f51b5",
-    "theme": "dark"
-  },
-  "homepage": "https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md",
-  "bugs": {
-    "url": "https://github.com/hardikpthv/vscode-ng-material-snippets/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hardikpthv/vscode-ng-material-snippets.git"
-  },
-  "keywords": [
-    "Angular",
-    "Angular 6",
-    "Material",
-    "Angular Material",
-    "HTML"
-  ],
-  "engines": {
-    "vscode": "^1.10.0"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "contributes": {
-    "snippets": [
-      {
-        "language": "html",
-        "path": "./snippets/html.json"
-      }
-    ]
-  }
+    "name": "AngularMaterial",
+    "displayName": "Angular Material v7 snippets",
+    "description": "Angular Material with HTML snippets",
+    "version": "7.0.0",
+    "publisher": "hardikpthv",
+    "license": "MIT",
+    "icon": "images/angular.png",
+    "galleryBanner": {
+        "color": "#3f51b5",
+        "theme": "dark"
+    },
+    "homepage": "https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/hardikpthv/vscode-ng-material-snippets/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hardikpthv/vscode-ng-material-snippets.git"
+    },
+    "keywords": [
+        "Angular",
+        "Angular 6",
+        "Material",
+        "Angular Material",
+        "HTML"
+    ],
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.json"
+            }
+        ]
+    }
 }
