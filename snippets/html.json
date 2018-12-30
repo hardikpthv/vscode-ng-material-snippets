@@ -525,7 +525,7 @@
       "    <mat-cell *matCellDef=\"let element\"> {{element.${4:propertyName}}} </mat-cell>",
       "  </ng-container>",
       "",
-      "${5:a-md-data-table-column}",
+      "${5:a-md-data-table-column} <!-- press ctrl + space to add more column snippet or delete this line -->",
       "",
       "  <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>",
       "  <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>",
