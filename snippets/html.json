@@ -514,5 +514,37 @@
     "prefix": "a-md-chip",
     "body": ["<mat-chip>${1:val}</mat-chip>"],
     "description": "<mat-chip> control for <mat-chip-list>"
+  },
+  "DataTable": {
+    "prefix": "a-md-data-table",
+    "body": [
+      "<mat-table [dataSource]=\"${1:dataSource}\">",
+      "  <ng-container matColumnDef=\"${2:columnName}\">",
+      "    <mat-header-cell *matHeaderCellDef> ${3:columnHeaderLabel}",
+      "    </mat-header-cell>",
+      "    <mat-cell *matCellDef=\"let element\"> {{element.${4:propertyName}}} </mat-cell>",
+      "  </ng-container>",
+      "",
+      "${5:a-md-data-table-column}",
+      "",
+      "  <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>",
+      "  <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>",
+      "</mat-table>"
+    ],
+    "description": "DataTable"
+  },
+
+  "MatTableColumn": {
+    "prefix": "a-md-data-table-column",
+    "body": [
+      "  <ng-container matColumnDef=\"${1:columnName}\">",
+      "    <mat-header-cell *matHeaderCellDef> ${2:columnHeaderLabel}",
+      "    </mat-header-cell>",
+      "    <mat-cell *matCellDef=\"let element\"> {{element.${3:propertyName}}} </mat-cell>",
+      "  </ng-container>",
+      "",
+      "${4:a-md-data-table-column}"
+    ],
+    "description": ""
   }
 }
