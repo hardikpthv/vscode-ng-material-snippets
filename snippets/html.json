@@ -514,5 +514,35 @@
     "prefix": "a-md-chip",
     "body": ["<mat-chip>${1:val}</mat-chip>"],
     "description": "<mat-chip> control for <mat-chip-list>"
+  },
+  "DataTable": {
+    "prefix": "a-md-data-table",
+    "body": [
+      "<mat-table [dataSource]=\"${1:dataSource}\">",
+      "\t<ng-container matColumnDef=\"${2:columnName}\">",
+      "\t\t<mat-header-cell *matHeaderCellDef> ${3:columnHeaderLabel}",
+      "\t\t</mat-header-cell>",
+      "\t\t<mat-cell *matCellDef=\"let element\"> {{element.${4:propertyName}}} </mat-cell>",
+      "\t</ng-container>\n",      
+      "\t${5:a-md-data-table-column}",
+      "\t<!-- press ctrl + space to add more column snippet or delete this line -->\n",
+      "\t<mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>",
+      "\t<mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>",
+      "</mat-table>"
+    ],
+    "description": "<mat-table> control"
+  },
+
+  "MatTableColumn": {
+    "prefix": "a-md-data-table-column",
+    "body": [
+      "<ng-container matColumnDef=\"${1:columnName}\">",
+      "\t<mat-header-cell *matHeaderCellDef> ${2:columnHeaderLabel}</mat-header-cell>",      
+      "\t<mat-cell *matCellDef=\"let element\"> {{element.${3:propertyName}}} </mat-cell>",
+      "</ng-container>\n",      
+      "${4:a-md-data-table-column}",
+      "\t<!-- press ctrl + space to add more column snippet or delete this line -->\n",
+    ],
+    "description": "<mat-header-cell> column for </mat-table> control "
   }
 }

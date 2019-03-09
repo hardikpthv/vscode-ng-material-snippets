@@ -42,6 +42,7 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 | a-md-checkbox-fc      | `<mat-checkbox>` control with `formControlName`                    |
 | a-md-chips            | `<mat-chip-list>` control with `<mat-chip>`                        |
 | a-md-chip             | `<mat-chip>` control for `<mat-chip-list>`                         |
+| a-md-data-table       | `<mat-table>` control                                              |
 | a-md-datepicker       | `<mat-datepicker>` control                                         |
 | a-md-divider          | `<mat-divider>` control                                            |
 | a-md-inset-divider    | `<mat-divider>` control configured `inset`                         |
