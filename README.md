@@ -88,6 +88,7 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 | a-md-tree             | `<mat-tree>` control                                               |
 | a-md-tree-node        | `<mat-tree-node>` control                                          |
 | a-md-tree-nested-node | `<mat-nested-tree-node>` control                                   |
+| a-md-data-table       | `<mat-table>` control                                              |
 
 ### TypeScript Snippets
 
