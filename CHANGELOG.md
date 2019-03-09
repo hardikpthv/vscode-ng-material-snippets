@@ -1,8 +1,17 @@
+<a name="7.0.1"></a>
+
+# 7.0.1 (2019-03-09)
+
+* Added documentation to [`README.md`](https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md) for new snippets
+* Added HTML snippets for
+  * `<mat-table>` control
+  * `<mat-cell>` control
+  
 <a name="7.0.0"></a>
 
 # 7.0.0 (2018-12-08)
 
-* Updated documentation to [`README.md`](https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md) for new snippets
+* Updated documentation [`README.md`](https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md) for new snippets
 * Added HTML snippets for
   * `matRipple` directive
   * `matRippleColor` directive
