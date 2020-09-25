@@ -1,7 +1,8 @@
-# Angular Material v7 Snippets for VS Code
+# Angular Material v10 Snippets for VS Code
 
 [![Version](https://vsmarketplacebadge.apphb.com/version/hardikpthv.AngularMaterial.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.AngularMaterial)
 [![Install](https://vsmarketplacebadge.apphb.com/installs/hardikpthv.AngularMaterial.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.AngularMaterial)
+[![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/hardikpthv.AngularMaterial.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.AngularMaterial)
 [![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/hardikpthv.AngularMaterial.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.AngularMaterial)
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 
@@ -15,7 +16,7 @@ Have a look at [CHANGELOG](CHANGELOG.md) for the latest changes
 1.  Launch VS Code
 1.  Hit `Cmd`-`Shift`-`P` (macOS) or `Ctrl`-`Shift`-`P` (Windows, Linux)
 1.  Select `Install Extension`
-1.  Choose the extension `Angular Material v7 snippets`
+1.  Choose the extension `Angular Material v10 snippets`
 1.  Reload Visual Studio Code
 
 ## Usage
@@ -88,6 +89,9 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 | a-md-tree             | `<mat-tree>` control                                               |
 | a-md-tree-node        | `<mat-tree-node>` control                                          |
 | a-md-tree-nested-node | `<mat-nested-tree-node>` control                                   |
+| a-md-icon             | `<mat-icon>` control                                               |
+| a-md-sort             | `matSort` directive with `matSortChange` event                     |
+| a-md-tree             | `<cdk-tree>` control                                               |
 
 ### TypeScript Snippets
 
@@ -95,8 +99,10 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 | ------------- | --------------------------- |
 | a-md-snackbar | `MatSnackBar` configuration |
 
-### Using NgRx in Angular Apps
+### Using NgRx or WebComponents 🤔
 
-- Check out [NgRx Snippets](https://bit.ly/ngrx-vscode)
+- Check out:
+  - [NgRx Snippets](https://bit.ly/ngrx-vscode)
+  - [Webcomponents and Lit Snippets](https://bit.ly/lit-vscode)
 
 #### Inspiration from [Angular Typescript Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2) by [John Papa](https://github.com/johnpapa/)
