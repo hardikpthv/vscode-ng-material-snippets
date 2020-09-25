@@ -543,5 +543,51 @@
       "<!-- press ctrl + space to add more column snippet or delete this line -->\n"
     ],
     "description": "<mat-header-cell> column for </mat-table> control "
+  },
+  "matIcon": {
+    "prefix": "a-md-icon",
+    "body": [
+      "<mat-icon aria-hidden=\"false\" aria-label=\"{2:label} icon\">${1:icon}</mat-icon>"
+    ],
+    "description": "mat-icon control"
+  },
+  "matSort": {
+    "prefix": "a-md-sort",
+    "body": ["matSort (matSortChange)=\"${1:methodName}($event)\""],
+    "description": "matSort directive with matSortChange event"
+  },
+  "cdkTree": {
+    "prefix": "a-md-tree",
+    "body": [
+      "<cdk-tree [dataSource]=\"${1:dataSource}\" [treeControl]=\"${2:treeControl}\">",
+      "\t<cdk-tree-node",
+      "\t\t*cdkTreeNodeDef=\"let node;\"",
+      "\t\tcdkTreeNodePadding",
+      "\t\t[style.display]=\"${4:logic}\"",
+      "\t>",
+      "\t\t<button mat-icon-button disabled></button>",
+      "\t\t{{node.name}}",
+      "\t</cdk-tree-node>",
+      "\t<cdk-tree-node",
+      "\t\t*cdkTreeNodeDef=\"let node; when: hasChild\"",
+      "\t\tcdkTreeNodePadding",
+      "\t\t[style.display]=\"${4:logic}\"",
+      "\t>",
+      "\t\t<button",
+      "\t\t\tmat-icon-button",
+      "\t\t\tcdkTreeNodeToggle",
+      "\t\t\t[attr.aria-label]=\"'Toggle ' + node.name\"",
+      "\t\t\t(click)=\"node.isExpanded = !node.isExpanded\"",
+      "\t\t\t[style.visibility]=\"node.expandable ? 'visible' : 'hidden'\"",
+      "\t\t>",
+      "\t\t\t<mat-icon class=\"mat-icon-rtl-mirror\">",
+      "\t\t\t\t{{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}",
+      "\t\t\t</mat-icon>",
+      "\t\t</button>",
+      "\t\t{{node.name}}",
+      "\t</cdk-tree-node>",
+      "</cdk-tree>"
+    ],
+    "description": "<cdk-tree> control"
   }
 }

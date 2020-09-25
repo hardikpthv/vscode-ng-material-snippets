@@ -1,8 +1,18 @@
+<a name="10.0.0"></a>
+
+# 10.0.0 (2020-09-25)
+
+* Updated [`README.md`](https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md) for new snippets
+* Added HTML snippets for
+  * `<<mat-icon>` control
+  * `<cdk-tree>` control
+  * `matSort` directive with `matSortChange` event  
+
 <a name="7.0.1"></a>
 
 # 7.0.1 (2019-03-09)
 
-* Added documentation to [`README.md`](https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md) for new snippets
+* Updated [`README.md`](https://github.com/hardikpthv/vscode-ng-material-snippets/blob/master/README.md) for new snippets
 * Added HTML snippets for
   * `<mat-table>` control
   * `<mat-cell>` control
