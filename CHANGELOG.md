@@ -1,3 +1,19 @@
+<a name="22.0.0"></a>
+
+# 22.0.0 (2026-06-12)
+
+* Updated extension metadata and documentation for Angular Material v22
+* Updated existing HTML and TypeScript snippets to current Angular Material v22 syntax
+* Added HTML snippets for
+  * `MatBottomSheet` trigger and content
+  * `MatDialog` trigger and content
+  * `<mat-date-range-picker>` control
+  * `<mat-form-field>` wrapper
+* Added TypeScript snippets for
+  * `MatBottomSheet` open and dismiss handlers
+  * `MatDialog` open handler
+* Fixed stale snippet syntax including legacy button selectors, chip list, slider, table, tree, list item, and form field patterns
+
 <a name="10.0.0"></a>
 
 # 10.0.0 (2020-09-25)

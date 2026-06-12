@@ -1,11 +1,5 @@
 # Angular Material v22 Snippets for VS Code
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/hardikpthv.AngularMaterial.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.AngularMaterial)
-[![Install](https://vsmarketplacebadge.apphb.com/installs/hardikpthv.AngularMaterial.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.AngularMaterial)
-[![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/hardikpthv.AngularMaterial.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.AngularMaterial)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/hardikpthv.AngularMaterial.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.AngularMaterial)
-[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-
 This extension for Visual Studio Code adds snippets of HTML and TypeScript for Angular Material.
 
 Have a look at [CHANGELOG](CHANGELOG.md) for the latest changes
