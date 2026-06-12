@@ -1,4 +1,4 @@
-# Angular Material v10 Snippets for VS Code
+# Angular Material v22 Snippets for VS Code
 
 [![Version](https://vsmarketplacebadge.apphb.com/version/hardikpthv.AngularMaterial.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.AngularMaterial)
 [![Install](https://vsmarketplacebadge.apphb.com/installs/hardikpthv.AngularMaterial.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.AngularMaterial)
@@ -16,7 +16,7 @@ Have a look at [CHANGELOG](CHANGELOG.md) for the latest changes
 1.  Launch VS Code
 1.  Hit `Cmd`-`Shift`-`P` (macOS) or `Ctrl`-`Shift`-`P` (Windows, Linux)
 1.  Select `Install Extension`
-1.  Choose the extension `Angular Material v10 snippets`
+1.  Choose the extension `Angular Material v22 snippets`
 1.  Reload Visual Studio Code
 
 ## Usage
@@ -29,41 +29,48 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 
 | Snippet               | Purpose                                                            |
 | --------------------- | ------------------------------------------------------------------ |
-| a-md-auto-complete    | `<mat-autocomplete>` control with `*ngFor`                         |
-| a-md-badge            | `matBadge` with all configutration                                 |
-| a-md-badge-button     | `matBadge` on button `mat-button`                                  |
-| a-md-button           | `mat-button` basic button                                          |
-| a-md-button-link      | `mat-button` basic button with `routerLink`                        |
-| a-md-raised-button    | `mat-raised-button` button                                         |
+| a-md-auto-complete    | `<mat-autocomplete>` control with `@for`                           |
+| a-md-badge            | `matBadge` with all configuration                                  |
+| a-md-badge-button     | `matBadge` on button `matButton="elevated"`                        |
+| a-md-button           | `matButton` basic button                                           |
+| a-md-button-link      | `matButton` link with `routerLink`                                 |
+| a-md-raised-button    | `matButton="elevated"` button                                      |
 | a-md-button-toggles   | `<mat-button-toggle-group>` control                                |
-| a-md-icon-button      | `mat-icon-button` button                                           |
+| a-md-icon-button      | `matIconButton` button                                             |
+| a-md-bottom-sheet     | `MatBottomSheet` trigger button                                    |
+| a-md-bottom-sheet-content | `MatBottomSheet` content with list item                        |
 | a-md-card             | `<mat-card>` control basic card                                    |
 | a-md-card-simple      | `<mat-card>` control simple card                                   |
 | a-md-checkbox         | `<mat-checkbox>` control with `ngModel`                            |
 | a-md-checkbox-fc      | `<mat-checkbox>` control with `formControlName`                    |
-| a-md-chips            | `<mat-chip-list>` control with `<mat-chip>`                        |
-| a-md-chip             | `<mat-chip>` control for `<mat-chip-list>`                         |
+| a-md-chips            | `<mat-chip-set>` control with `<mat-chip>`                         |
+| a-md-chip             | `<mat-chip>` control for `<mat-chip-set>`                          |
 | a-md-data-table       | `<mat-table>` control                                              |
+| a-md-data-table-column | `<mat-table>` column definition                                    |
 | a-md-datepicker       | `<mat-datepicker>` control                                         |
+| a-md-date-range-picker | `<mat-date-range-picker>` control                                 |
+| a-md-dialog           | `MatDialog` trigger button                                         |
+| a-md-dialog-content   | `MatDialog` content with actions                                   |
 | a-md-divider          | `<mat-divider>` control                                            |
 | a-md-inset-divider    | `<mat-divider>` control configured `inset`                         |
 | a-md-ex-panel         | `<mat-expansion-panel>` control for expandable summary view        |
-| a-md-fab              | `mat-fab` Floating action button                                   |
-| a-md-fab-mini         | `mat-mini-fab` Floating action mini button                         |
+| a-md-fab              | `matFab` Floating action button                                    |
+| a-md-fab-mini         | `matMiniFab` Floating action mini button                           |
+| a-md-form-field       | `<mat-form-field>` wrapper                                         |
 | a-md-grid             | `<mat-grid-list>` control for grid-based layout                    |
 | a-md-grid-tile        | `<mat-grid-tile>` Grid tile for `<mat-grid-list>` control          |
 | a-md-input            | `matInput` directive                                               |
 | a-md-input-fc         | `matInput` with `formControlName` enclosed `<mat-form-field>`      |
 | a-md-input-ngModel    | `matInput` with `ngModel` enclosed `<mat-form-field>`              |
 | a-md-input-error      | `mat-error` control for `matInput`                                 |
-| a-md-input-icon       | `matInput` wtih icon suffixed                                      |
+| a-md-input-icon       | `matInput` with icon suffixed                                      |
 | a-md-list             | `<mat-list>` control with default `<mat-list-item>`                |
 | a-md-list-item        | `<mat-list-item>` single item                                      |
 | a-md-selection-list   | `<mat-selection-list>` control with default `<mat-list-option>`    |
 | a-md-list-option      | `<mat-list-option>` single item                                    |
-| a-md-icon-list        | `<mat-list>` with default `<mat-icon matListIcon>`                 |
+| a-md-icon-list        | `<mat-list>` with default `<mat-icon matListItemIcon>`             |
 | a-md-menu             | `<mat-menu>` control with default items                            |
-| a-md-menu-nested      | Nested `<md-menu>` with default items                              |
+| a-md-menu-nested      | Nested `<mat-menu>` with default items                             |
 | a-md-menu-with-icon   | `<mat-menu>` control with default items and icon                   |
 | a-md-paginator        | `<mat-paginator>` control for pagination                           |
 | a-md-progress-bar     | `<mat-progress-bar>` control with `indeterminate` mode             |
@@ -77,9 +84,9 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 | a-md-select-ngModel   | `<mat-select>` control with `ngModel`                              |
 | a-md-select-option    | `<mat-option>` for `<mat-select>`                                  |
 | a-md-slider           | `<mat-slider>` control default horizontal                          |
-| a-md-slider-vertical  | `<mat-slider>` control vertical                                    |
-| a-md-sidenav          | `<mat-sidenav>` control with `*ngFor` to iterate through nav items |
-| a-md-stepper          | `<mat-horizontal-stepper>` control with `<mat-step>`               |
+| a-md-slider-vertical  | `<mat-slider>` control with thumb input and configuration          |
+| a-md-sidenav          | `<mat-sidenav>` control with `@for` to iterate through nav items   |
+| a-md-stepper          | `<mat-stepper>` control with `<mat-step>`                          |
 | a-md-step             | `<mat-step>` control with `<form>`                                 |
 | a-md-switch           | `<mat-slide-toggle>` switch control                                |
 | a-md-tab              | `<mat-tab>` control with set of two tabs                           |
@@ -91,12 +98,14 @@ Start typing `a-md-*` and hit `enter`, the snippet spreads out.
 | a-md-tree-nested-node | `<mat-nested-tree-node>` control                                   |
 | a-md-icon             | `<mat-icon>` control                                               |
 | a-md-sort             | `matSort` directive with `matSortChange` event                     |
-| a-md-tree             | `<cdk-tree>` control                                               |
+| a-md-cdk-tree         | `<cdk-tree>` control                                               |
 
 ### TypeScript Snippets
 
 | Snippet       | Purpose                     |
 | ------------- | --------------------------- |
+| a-md-bottom-sheet | `MatBottomSheet` open and dismiss handlers |
+| a-md-dialog | `MatDialog` open handler |
 | a-md-snackbar | `MatSnackBar` configuration |
 
 ### Using NgRx or WebComponents 🤔

@@ -1,12 +1,49 @@
 {
-  "matAutoComplete": {
+  "matBottomSheet": {
+    "prefix": "a-md-bottom-sheet",
+    "body": [
+      "// import {inject} from '@angular/core';",
+      "// import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';",
+      "// private bottomSheet = inject(MatBottomSheet);",
+      "// private bottomSheetRef = inject<MatBottomSheetRef<${1:BottomSheetComponent}>>(MatBottomSheetRef);",
+      "openBottomSheet(): void {",
+      "\tthis.bottomSheet.open(${1:BottomSheetComponent});",
+      "}",
+      "",
+      "openLink(event: MouseEvent): void {",
+      "\tthis.bottomSheetRef.dismiss();",
+      "\tevent.preventDefault();",
+      "}"
+    ],
+    "description": "MatBottomSheet open and dismiss handlers"
+  },
+  "matDialog": {
+    "prefix": "a-md-dialog",
+    "body": [
+      "// import {inject} from '@angular/core';",
+      "// import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';",
+      "// readonly dialog = inject(MatDialog);",
+      "openDialog(): void {",
+      "\tconst dialogRef = this.dialog.open(${1:DialogComponent}, {",
+      "\t\tdata: ${2:data},",
+      "\t});",
+      "",
+      "\tdialogRef.afterClosed().subscribe(result => {",
+      "\t\t${3:// handle result}",
+      "\t});",
+      "}"
+    ],
+    "description": "MatDialog open handler"
+  },
+  "matSnackBar": {
     "prefix": "a-md-snackbar",
     "body": [
-      "//import {MatSnackBar} from '@angular/material';",
-      "//constructor(public snackBar: MatSnackBar) {}",
+      "// import {inject} from '@angular/core';",
+      "// import {MatSnackBar} from '@angular/material/snack-bar';",
+      "// private snackBar = inject(MatSnackBar);",
       "openSnackBar(message: string, action: string) {",
       "\tthis.snackBar.open(message, action, {",
-      "\t\tduration: ${1:duration},",
+      "\t\tduration: ${1:3000},",
       "\t});",
       "}"
     ],
